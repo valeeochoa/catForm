@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Cat Form</h1><!-- 1 -->
+    <div class="paw-container">
+        <img src="img/wider_paw_heart.png" class="paw-heart" alt="I am a cat paw print in the shape of a heart.">
+    </div>
+
+    <p id="description">Are you really a cat lover? Please take this survey</p> <!-- 2 -->
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'> <!-- 3 -->
+      <fieldset>
+        <label id="name-label">Name: <input id="name" name="name" type="text" required placeholder="Enter your name" /></label> <!-- 4 10 11-->
+        <label id="email-label">Email: <input id="email" name="email" type="email" required placeholder="Enter your email" /></label> <!-- 5 y 6 10 11-->
+      <label id="number-label">Age (optional): <input id="number" type="number" name="age" min="10" max="100"placeholder="Enter your age" /></label> <!-- 7 8 9 10 11-->
+
+      <label for="catlover">How much do you love cats?
+          <select id="dropdown" name="catlover"><!--12-->
+            <option value="">(select one)</option>
+            <option value="1">I like them a little</option>
+            <option value="2">I love cats</option>
+            <option value="3">I'm a crazy cat fan</option>
+          </select>
+        </label>
+<!--13-->
+        <h4>Do you speak cat language?</h4><!--13-->
+        <label for="no"><input id="no" type="radio" value="no" name="catLanguage" class="inline" checked />No :/</label>
+        <label for="aLittle"><input value="aLittle" id="aLittle"type="radio" name="catLanguage" class="inline" />Just a little</label>
+        <label for="obviusly"><input value="obviusly" id="obviusly"type="radio" name="catLanguage" class="inline" />Obviusly, I'm the best speaking cat language</label>
+
+      <!--14-->
+      <h4>What do you like most about cats?</h4>
+      <label for="cuteFace">
+        <input id="cuteFace" name="cuteFace" value="cuteFace" type="checkbox"/>Their cute faces
+      </label>
+
+      <label for="purring">
+        <input id="purring" name="purring" value="purring" type="checkbox"/>Their purring
+      </label>
+
+      <label for="eyes">
+        <input id="eyes" value="eyes" name="eyes" type="checkbox"/>Their expressive eyes
+      </label>
+
+      <label for="fur">
+        <input id="fur" value="fur" name="fur" type="checkbox"/>Their fur colors
+      </label>
+
+      <!--15--><br>
+        <label for="catHistory">Do you have a cat? Tell us about it
+          <textarea id="catHistory" name="catHistory" rows="3" cols="30" placeholder="Tell us about your cat..."></textarea>
+        </label>
+      </fieldset>
+      <!--15-->
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
